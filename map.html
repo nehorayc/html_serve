@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8cafca90f85647858b9351e0ca8f5715 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8cafca90f85647858b9351e0ca8f5715" ></div>
+        
+</body>
+<script>    
+    
+            var map_8cafca90f85647858b9351e0ca8f5715 = L.map(
+                "map_8cafca90f85647858b9351e0ca8f5715",
+                {
+                    center: [46.96158, -102.56067],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39732007e1384e85a01b67294ac7a216 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8cafca90f85647858b9351e0ca8f5715);
+        
+    
+            var marker_09766defe47d4e5cb1af8fc92d13aa8f = L.marker(
+                [47.606209, -122.332069],
+                {}
+            ).addTo(map_8cafca90f85647858b9351e0ca8f5715);
+        
+    
+            var icon_3f0ad0d8186b458ca216b9e033783349 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09766defe47d4e5cb1af8fc92d13aa8f.setIcon(icon_3f0ad0d8186b458ca216b9e033783349);
+        
+    
+        var popup_0d2117927b4142ccb181454e0325ba81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0afe3c8f8434102b8bfe55fcd758b1a = $(`<div id="html_a0afe3c8f8434102b8bfe55fcd758b1a" style="width: 100.0%; height: 100.0%;">Seattle</div>`)[0];
+            popup_0d2117927b4142ccb181454e0325ba81.setContent(html_a0afe3c8f8434102b8bfe55fcd758b1a);
+        
+
+        marker_09766defe47d4e5cb1af8fc92d13aa8f.bindPopup(popup_0d2117927b4142ccb181454e0325ba81)
+        ;
+
+        
+    
+    
+            var marker_7e62207b810542cb9850ff85bfec20fa = L.marker(
+                [37.774929, -122.419418],
+                {}
+            ).addTo(map_8cafca90f85647858b9351e0ca8f5715);
+        
+    
+            var icon_3488217ceee9405c81ca1d81e9b02221 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7e62207b810542cb9850ff85bfec20fa.setIcon(icon_3488217ceee9405c81ca1d81e9b02221);
+        
+    
+        var popup_0dcf1835a3294a27a8f87c0a896a455a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_165d8e066fa541f7b3e9ebea58edb44f = $(`<div id="html_165d8e066fa541f7b3e9ebea58edb44f" style="width: 100.0%; height: 100.0%;">San Fransisco</div>`)[0];
+            popup_0dcf1835a3294a27a8f87c0a896a455a.setContent(html_165d8e066fa541f7b3e9ebea58edb44f);
+        
+
+        marker_7e62207b810542cb9850ff85bfec20fa.bindPopup(popup_0dcf1835a3294a27a8f87c0a896a455a)
+        ;
+
+        
+    
+    
+            var marker_42debd7fc9ce47f38fe3dd48062ec10c = L.marker(
+                [41.878113, -87.629799],
+                {}
+            ).addTo(map_8cafca90f85647858b9351e0ca8f5715);
+        
+    
+            var icon_a3a29003bb4447d1adcb4478b6255b48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "envelope", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_42debd7fc9ce47f38fe3dd48062ec10c.setIcon(icon_a3a29003bb4447d1adcb4478b6255b48);
+        
+    
+        var popup_aa270356db664257aad34d6ea1ca5574 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be451ef96d094f66adcaff93439c71bc = $(`<div id="html_be451ef96d094f66adcaff93439c71bc" style="width: 100.0%; height: 100.0%;">Chicago</div>`)[0];
+            popup_aa270356db664257aad34d6ea1ca5574.setContent(html_be451ef96d094f66adcaff93439c71bc);
+        
+
+        marker_42debd7fc9ce47f38fe3dd48062ec10c.bindPopup(popup_aa270356db664257aad34d6ea1ca5574)
+        ;
+
+        
+    
+    
+            var marker_4cda91bf7ad14e849ef6a49c06e10e5d = L.marker(
+                [40.74372, -73.82203],
+                {}
+            ).addTo(map_8cafca90f85647858b9351e0ca8f5715);
+        
+    
+        var popup_bded55f08beb4367b09150459641c219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33204f96a8234508b6868f68fdc86bd4 = $(`<div id="html_33204f96a8234508b6868f68fdc86bd4" style="width: 100.0%; height: 100.0%;"><strong>Spiderman</strong><br>Realname: Peter Parker<br>City of birth: Forest Hills, Queens, New York, USA</div>`)[0];
+            popup_bded55f08beb4367b09150459641c219.setContent(html_33204f96a8234508b6868f68fdc86bd4);
+        
+
+        marker_4cda91bf7ad14e849ef6a49c06e10e5d.bindPopup(popup_bded55f08beb4367b09150459641c219)
+        ;
+
+        
+    
+    
+            marker_4cda91bf7ad14e849ef6a49c06e10e5d.bindTooltip(
+                `<div>
+                     Spiderman
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ad6c9092b074d98b7d42e1f0f5a9a35 = L.marker(
+                [39.760979, -84.1922],
+                {}
+            ).addTo(map_8cafca90f85647858b9351e0ca8f5715);
+        
+    
+        var popup_8e7603ef8260415f8db5fe025d0fe646 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05340a39aec049c9b3c67db5f58b2419 = $(`<div id="html_05340a39aec049c9b3c67db5f58b2419" style="width: 100.0%; height: 100.0%;"><strong>Hulk</strong><br>Realname: Bruce Banner<br>City of birth: Dayton, Ohio, USA</div>`)[0];
+            popup_8e7603ef8260415f8db5fe025d0fe646.setContent(html_05340a39aec049c9b3c67db5f58b2419);
+        
+
+        marker_7ad6c9092b074d98b7d42e1f0f5a9a35.bindPopup(popup_8e7603ef8260415f8db5fe025d0fe646)
+        ;
+
+        
+    
+    
+            marker_7ad6c9092b074d98b7d42e1f0f5a9a35.bindTooltip(
+                `<div>
+                     Hulk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_437a9402aff14adfb82c53dc0a556a4d = L.marker(
+                [54.46418, -110.182259],
+                {}
+            ).addTo(map_8cafca90f85647858b9351e0ca8f5715);
+        
+    
+        var popup_db4c3a7655b74f9eac4cad64d21e2bfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d899b810d9d40e68b22bb1493c6be03 = $(`<div id="html_5d899b810d9d40e68b22bb1493c6be03" style="width: 100.0%; height: 100.0%;"><strong>Wolverine</strong><br>Realname: James Howlett (Logan)<br>City of birth: Cold Lake, Alberta, Canada</div>`)[0];
+            popup_db4c3a7655b74f9eac4cad64d21e2bfa.setContent(html_5d899b810d9d40e68b22bb1493c6be03);
+        
+
+        marker_437a9402aff14adfb82c53dc0a556a4d.bindPopup(popup_db4c3a7655b74f9eac4cad64d21e2bfa)
+        ;
+
+        
+    
+    
+            marker_437a9402aff14adfb82c53dc0a556a4d.bindTooltip(
+                `<div>
+                     Wolverine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
